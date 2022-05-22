@@ -49,7 +49,7 @@ class Config(object):
     URL = None
     HEROKU_API_KEY = ""
     HEROKU_APP_NAME = ""
-    BOT_USERNAME = "NekoXRobot"
+    BOT_USERNAME = "MishaXRobot"
     SPAMWATCH_API = 'ixd7Qui~aQOTeaLynGRKeVqczYaZQFopZpfYagMx2ZrdUcSzMW~h2N1gJoGRZzmP'  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     ARQ_API_KEY = "1234"
