@@ -31,8 +31,8 @@ PHOTO = "https://te.legra.ph/file/0621662848ad9603dddb6.mp4"
 async def awake(event):
   NEKO = f"**♡ Hey {event.sender.first_name} I'am Eris Greyrat** \n"
   NEKO += "**♡ I'm Working With Cuteness**\n"
-  NEKO += "**♡ Eris: 3.10.2**\n"
-  NEKO += "**♡ My Creator:** [*Husbando*](t.me/Husbandoo)\n"
-  NEKO += "**♡ Python-Telegram-Bot: 13.11**\n\n"
+  NEKO += "**♡ Eris Version : 3.10.2**\n"
+  NEKO += "**♡ My Creator :** [Husbando](t.me/Husbandoo)\n"
+  NEKO += "**♡ Python-Telegram-Bot : 13.11**\n\n"
   BUTTON = [[Button.url("Support", "https://t.me/NexusXSupport"), Button.url("Updates", "https://t.me/TeamNexusX")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=NEKO,  buttons=BUTTON)
