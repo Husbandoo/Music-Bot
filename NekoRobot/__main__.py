@@ -82,21 +82,21 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"Add NekoX To Your Group",
-                            url=f"t.me/NekoXRobot?startgroup=true")
+                            text=f"Add Misha To Your Group",
+                            url=f"t.me/MishaXRobot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔Chit Chat", url="https://t.me/Besties_XD"),
-                       InlineKeyboardButton(text="[► Repo ◄]", url="https://GitHub.com/Awesome-Prince/NekoRobot-3"),
+                       InlineKeyboardButton(text="[Help]", callback_data="help_back"),
+                       InlineKeyboardButton(text="Chat", url="https://t.me/AnimeChatFrozen"),
+                       InlineKeyboardButton(text="[Source]", url="https://t.me/NexusXSupport/12582"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="Support",
+                             url=f"https://t.me/NexusXSupport"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/Koyuki_Updates")
+                             text="Updates",
+                             url="https://t.me/TeamNexusX")
                      ], 
     ]
 
@@ -115,11 +115,11 @@ HELP_STRINGS = """
 *{} is here! 
 I Use My Powers To Help Admins To Manage Their Groups! 
 *Main* commands available :
- ❥ /help: PM's you this message.
- ❥ /help <module name>: PM's you info about that module.
- ❥ /settings:
-   ✐ in PM: will send you your settings for all supported modules.
-   ✐ in a group: will redirect you to pm, with all that chat's settings.
+  /help: PM's you this message.
+  /help <module name>: PM's you info about that module.
+  /settings:
+     in PM: will send you your settings for all supported modules.
+     in a group: will redirect you to pm, with all that chat's settings.
 For all command use /* [or](https://telegra.ph/file/ab36976c685575c4e1a5f.jpg) *!* 
 """.format(
     dispatcher.bot.first_name, ""
