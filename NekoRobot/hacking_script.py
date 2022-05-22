@@ -1,17 +1,14 @@
 PM_START_TEXT = """
 ────「 [{}] 」────
-*やあ! {} My Darling, Iam your SweetHeart💜,
-I am an Anime themed advance group management bot with a lot of Sexy Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-◈ *Uptime:* `{}`
+*やあ! Hello {} My Darling, I'am your SweetHeart & Here To Protect You,
+I'm An Anime Themed Multi-Featured & Advanced Group Management Bot To Manage Your Group.*
+
+◈ *Version :* `3.10.2`
+◈ *Server Uptime:* `{}`
 ◈ `{}` *users, across* `{}` *chats.*
-◈ *Thanks To @NekoXRobot For NekoRobot Repo*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➢ Try The Help Buttons Below To Know My Abilities ♡
+
+➢ Try The /help Buttons To See The Commands Available After My Element Buff ××
 """
 
 
-PM_START_PIC = "https://telegra.ph/file/bdc771a084e2c806ec756.jpg"
-
-
-## Don't Remove That Credits in PM_START_TEXT if yoy removed your app will be crashed.
+PM_START_PIC = "https://te.legra.ph/file/9abdbb8e7fa75e03a91ea.jpg"
