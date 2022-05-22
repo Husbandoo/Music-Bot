@@ -151,10 +151,10 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
     nation_level_present = False
 
     if user.id == OWNER_ID:
-        text += f"\n\nThis person is my owner"
+        text += f"\n\nThis Perrson Is My Owner"
         nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\n\nThis Person is a part Developer of Miku"
+        text += f"\n\nThis Person Is Developer of Nobara"
         nation_level_present = True
     elif user.id in DRAGONS:
         text += f"\n\nThe Nation level of this person is Royal"
@@ -194,7 +194,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/NekoXSupport",
+                    url=f"https://t.me/NexusXSupport",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -231,7 +231,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     about_text = f"""
-    [Neko 💜](https://t.me/NekoXRobot)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
+    [Eris Boreas Greyrat](https://t.me/NekoXRobot)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
     """
     results: list = []
     kb = InlineKeyboardMarkup(
@@ -239,7 +239,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text='Support',
-                    url=f'https://t.me/NekoXSupport',
+                    url=f'https://t.me/NexusXSupport',
                 ),
                 InlineKeyboardButton(
                     text='Sys Stats',
@@ -322,7 +322,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/MikusSupport",
+                    url=f"https://t.me/NexusXSupport",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -467,7 +467,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="https://t.me/NekoXSupport",
+                        url="https://t.me/NexusXSupport",
                     ),
                     InlineKeyboardButton(
                         text="Search again",
