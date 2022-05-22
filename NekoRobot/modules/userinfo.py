@@ -338,7 +338,7 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Intermediate'."
         disaster_level_present = True
-    elif user.id == :
+    elif user.id == 5373162687:
          text += "\n\nCo-Owner Of A Bot."
          disaster_level_present = True
 
@@ -473,15 +473,15 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/Koyuki_Updates)\n\n"
-            + "\n╘══「 by [Koyūki Network](https://t.me/Koyuki_Network) 」\n",
+            + f"\n\n[✦ Support](https://t.me/NexusXSupport) | [✦ Updates](https://t.me/TeamNexusX)\n\n"
+            + "\n╘══「 by [Aogiri Network](https://t.me/AogiriNetwork) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="github.com/Awesome-Prince/NekoRobot-2")
+                             text="Source",
+                             url="https://t.me/NexusXSupport/12582")
                      ] 
                 ]
             ),
@@ -494,17 +494,17 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Koyuki_Updates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/NexusXSupport) | ✦ [Updates](https://t.me/TeamNexusX)\n\n"
                 )
-                + "╘══「 by [Koyūki Network](https://t.me/Koyuki_Network) 」\n"
+                + "╘══「 by [Aogiri Network](https://t.me/AogiriNetwork) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="github.com/Awesome-Prince/NekoRobot-2")
+                             text="Source",
+                             url="https://t.me/NexusXSupport/12582")
                      ] 
                 ]
             ),
