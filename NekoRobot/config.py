@@ -16,28 +16,28 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 8669198
-    API_HASH = "80de719a4fe743dbcc28bdcc5ed0eb7b"
+    API_ID = 7761098
+    API_HASH = "6b19682d1aeeda50a4aa8b6eb61f3a4e"
 
-    BOT_ID = 2144506097
-    TOKEN = "2144506097:AAEVzns6GEtgzND0Tme--OFgxnZL1_feYCQ"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1732814103  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Its_IZ_PRINCE_xD"
-    DRAGONS = "5261323645 1491497760"
-    DEMONS = "5066001203"
-    DEV_USERS = "1544286112"
-    SUPPORT_CHAT = "Koyuki_Support"  # Your own group for support, do not add the @
+    BOT_ID = ""
+    TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1938491135  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Husbandoo"
+    DRAGONS = ""
+    DEMONS = ""
+    DEV_USERS = "5358835742 5132611794 1802324609"
+    SUPPORT_CHAT = "NexusXSupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001791135075
+        -1001551314374
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001791135075
+        -1001551314374
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgres://zbrkaxqs:8JcU08L8AAcec6EEHOWdhoD80su3KIm5@arjuna.db.elephantsql.com/zbrkaxqs"  # needed for any database module
-    DATABASE_URL = "postgres://zbrkaxqs:8JcU08L8AAcec6EEHOWdhoD80su3KIm5@arjuna.db.elephantsql.com/zbrkaxqs"
-    DB_URL = "postgres://zbrkaxqs:8JcU08L8AAcec6EEHOWdhoD80su3KIm5@arjuna.db.elephantsql.com/zbrkaxqs"
+    SQLALCHEMY_DATABASE_URI = ""  # needed for any database module
+    DATABASE_URL = ""
+    DB_URL = ""
 
     REDIS_URI = ""
 
@@ -50,7 +50,7 @@ class Config(object):
     HEROKU_API_KEY = ""
     HEROKU_APP_NAME = ""
     BOT_USERNAME = "NekoXRobot"
-    SPAMWATCH_API = 'P5_FWlwgUrpchwJceZDUSDxa41G396dn7J0vSEMWeBhHJ6C4q8VJLzjhfZPxNKUZ'  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = 'ixd7Qui~aQOTeaLynGRKeVqczYaZQFopZpfYagMx2ZrdUcSzMW~h2N1gJoGRZzmP'  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     ARQ_API_KEY = "1234"
     ARQ_API_URL = "https://thearq.tech/"
@@ -95,7 +95,7 @@ class Config(object):
     SPAMMERS = None
     REM_BG_API_KEY = ""
     GENIUS_API_TOKEN = ""
-    MONGO_DB_URI = "mongodb+srv://Izazkhan:izazkhan@cluster0.hlltt.mongodb.net/project0?retryWrites=true&w=majority"
+    MONGO_DB_URI = ""
     STRING_SESSION = ""
     
 
