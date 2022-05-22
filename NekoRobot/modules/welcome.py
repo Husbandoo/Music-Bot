@@ -61,10 +61,10 @@ ENUM_FUNC_MAP = {
 
 VERIFIED_USER_WAITLIST = {}
 
-NEKO_IMG = "https://telegra.ph/file/e321b823276a3c54c1dce.mp4"
-NEKO = "https://telegra.ph/file/be5388d1c407d5fe0ca14.jpg"
+NEKO_IMG = "https://te.legra.ph/file/0621662848ad9603dddb6.mp4"
+NEKO = "https://te.legra.ph/file/9abdbb8e7fa75e03a91ea.jpg"
 NEKO_VID = "https://telegra.ph/file/cf5a6cad607d0172809cf.mp4"
-WAIFUS_IMG = "https://telegra.ph/file/e9284f19f009784e24043.jpg"
+WAIFUS_IMG = "https://telegra.ph/file/959d2bc85a1d4cb2cf372.mp4"
 
 
 # do not async
@@ -186,13 +186,13 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat")
+                               f"Wtf My Divine just joined the chat")
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! S Rank Hunter just joined!",
+                    "Whoa! Our Imperial just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -200,7 +200,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                NEKO, caption= "Huh! A Rank Hunter just joined! Stay Alert!",
+                NEKO, caption= "Huh! Kingly just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -208,7 +208,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_photo(
-                NEKO, caption= "Huh! Someone with a B Rank Hunter level just joined!",
+                NEKO, caption= "Huh! Someone with a Saintly just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -216,14 +216,14 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_photo(
-                NEKO, caption= "Oof! A C Rank Hunter just joined!",
+                NEKO, caption= "Oof! A Advanced Magician just joined!",
                     reply_to_message_id=reply)
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_photo(
-                NEKO, caption= "Oof! A D Rank Hunter just joined!",
+                NEKO, caption= "Oof! A Intermediate Magician just joined!",
                     reply_to_message_id=reply)
                 continue
 
@@ -242,11 +242,11 @@ def new_member(update: Update, context: CallbackContext):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Support🚑",
-                             url=f"https://t.me/Koyuki_Support"),
+                             text="Support",
+                             url=f"https://t.me/NexusXSupport"),
                        InlineKeyboardButton(
-                             text="Updates🛰️",
-                             url="https://t.me/Koyuki_Updates")
+                             text="Updates",
+                             url="https://t.me/TeamNexusX")
                      ] 
                 ]
             ),
