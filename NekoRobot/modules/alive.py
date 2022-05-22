@@ -26,7 +26,7 @@ import re, os
 from NekoRobot.events import register
 from NekoRobot import telethn as tbot
 from NekoRobot import telethn as tgbot
-PHOTO = "https://te.legra.ph/file/0621662848ad9603dddb6.mp4"
+PHOTO = "https://telegra.ph/file/0621323b80ad082ba84f2.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
   NEKO = f"**♡ Hey {event.sender.first_name} I'am Eris Greyrat** \n"
