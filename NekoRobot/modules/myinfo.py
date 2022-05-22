@@ -15,13 +15,11 @@ from NekoRobot.events import register
 from NekoRobot import dispatcher
 
 
-edit_time = 5
+edit_time = 3
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/36440524ecd0a6b65138f.jpg"
-file2 = "https://telegra.ph/file/b0868af85d1d17554a6d4.jpg"
-file3 = "https://telegra.ph/file/60c612b4736560f9b98b9.jpg"
-file4 = "https://telegra.ph/file/a502e6322a201f5949058.jpg"
-file5 = "https://telegra.ph/file/737a7b4d519887c35ed21.jpg"
+file1 = "https://te.legra.ph/file/9abdbb8e7fa75e03a91ea.jpg"
+file2 = "https://te.legra.ph/file/391b37672c5e94709379e.jpg"
+file3 = "https://te.legra.ph/file/1e1015c1047eaa58fb4ef.jpg"
 """ =======================CONSTANTS====================== """
 
 @register(pattern="/myinfo")
