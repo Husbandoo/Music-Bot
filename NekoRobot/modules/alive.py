@@ -29,10 +29,10 @@ from NekoRobot import telethn as tgbot
 PHOTO = "https://te.legra.ph/file/0621662848ad9603dddb6.mp4"
 @register(pattern=("/alive"))
 async def awake(event):
-  NEKO = f"**♡ hey {event.sender.first_name} I,m Eris Boreas Greyrat** \n\n"
-  NEKO += "**♡ I'm Working with Cuteness**\n\n"
-  NEKO += "**♡ Eris: LATEST Version**\n\n"
-  NEKO += "**♡ My Creator:** [*Husbando*](t.me/Husbandoo)\n\n"
-  NEKO += "**♡ python-Telegram-Bot: 13.11**\n\n"
+  NEKO = f"**♡ Hey {event.sender.first_name} I'am Eris Greyrat** \n"
+  NEKO += "**♡ I'm Working With Cuteness**\n"
+  NEKO += "**♡ Eris: 3.10.2**\n"
+  NEKO += "**♡ My Creator:** [*Husbando*](t.me/Husbandoo)\n"
+  NEKO += "**♡ Python-Telegram-Bot: 13.11**\n\n"
   BUTTON = [[Button.url("Support", "https://t.me/NexusXSupport"), Button.url("Updates", "https://t.me/TeamNexusX")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=NEKO,  buttons=BUTTON)
