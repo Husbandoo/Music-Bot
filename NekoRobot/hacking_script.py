@@ -13,3 +13,6 @@ I'm An Anime Themed Multi-Featured & Advanced Group Management Bot To Manage You
 
 PM_START_PIC = "https://te.legra.ph/file/9abdbb8e7fa75e03a91ea.jpg"
 
+
+## Don't Remove That Credits in PM_START_TEXT if yoy removed your app will be crashed.
+
