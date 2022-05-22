@@ -35,7 +35,6 @@ from pyrogram import Client, errors
 from telethon.sessions import MemorySession
 from telethon import TelegramClient
 from aiohttp import ClientSession
-from NekoRobot.hacking_script import PM_START_TEXT
 
 StartTime = time.time()
 
@@ -300,9 +299,3 @@ tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
 
-
-if "@NekoXRobot" not in PM_START_TEXT:
-    LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Thanks To @NekoXRobot For Repo` In PM_START_TEXT To Fix This")
-    sys.exit(1)
-else:
-    LOGGER.info("Your Bot Is Ready")
