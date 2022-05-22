@@ -120,18 +120,18 @@ I Use My Powers To Help Admins To Manage Their Groups!
   /settings:
      in PM: will send you your settings for all supported modules.
      in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/ab36976c685575c4e1a5f.jpg) *!* 
+For all command use /* [or](https://telegra.ph/file/959d2bc85a1d4cb2cf372.mp4) *!* 
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-HELP_IMG = "https://telegra.ph/file/ab36976c685575c4e1a5f.jpg"
+HELP_IMG = "https://telegra.ph/file/959d2bc85a1d4cb2cf372.mp4"
 
 
 
 NEKO_IMG = (
-      "https://telegra.ph/file/6f6e36088ce15a189c400.mp4",
-      "https://telegra.ph/file/0cea56d9625f265ecc9db.mp4",
+      "https://te.legra.ph/file/0621662848ad9603dddb6.mp4",
+      "https://telegra.ph/file/959d2bc85a1d4cb2cf372.mp4",
       "https://telegra.ph/file/a131993b0f1e8517eacb2.mp4",
       "https://telegra.ph/file/6f43ded36dba5f256bba7.mp4",
       "https://telegra.ph/file/61acd313cc536bd1c6217.mp4",
@@ -139,7 +139,7 @@ NEKO_IMG = (
       )
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Telegram](https://t.me/DarlingPrince)"""
+Click here to donate in [Telegram](https://t.me/Husbandoo)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
