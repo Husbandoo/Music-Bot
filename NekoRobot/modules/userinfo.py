@@ -52,7 +52,7 @@ from NekoRobot.modules.helper_funcs.extraction import extract_user
 from NekoRobot import telethn
 from NekoRobot import pbot
 
-NEKO_IMG = "https://telegra.ph/file/a21731c0c4c7f27a3ec16.jpg"
+NEKO_IMG = "https://te.legra.ph/file/9abdbb8e7fa75e03a91ea.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -245,10 +245,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/"),
+                             url="https://t.me/ErisUpdates/17"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/"),
+                             url="https://t.me/ErisUpdates/15"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -321,24 +321,24 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'God'."
+        text += "\n\nThe Disaster level of this person is 'Divine'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Heros Association'."
+        text += "\n\nThis user is member of 'Imperial'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Dragon'."
+        text += "\n\nThe Disaster level of this person is 'Kingly'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Demon'."
+        text += "\n\nThe Disaster level of this person is 'Saintly'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Tiger'."
+        text += "\n\nThe Disaster level of this person is 'Advanced'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wolf'."
+        text += "\n\nThe Disaster level of this person is 'Intermediate'."
         disaster_level_present = True
-    elif user.id == 5291415314:
+    elif user.id == :
          text += "\n\nCo-Owner Of A Bot."
          disaster_level_present = True
 
