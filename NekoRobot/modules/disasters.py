@@ -86,16 +86,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a A Rank Hunter")
+        message.reply_text("This member is already a Kingly")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HA to promote a B Rank Hunter to A Rank Hunter."
+        rt += "Requested HA to promote a Saintly to Kingly."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote a D Rank Hunter to A Rank Hunter."
+        rt += "Requested HA to promote a Intermediate to Kingly."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -106,7 +106,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfully set Power Level {} to A Rank Hunter!".format(
+        rt + "\nSuccessfully set Power Level {} to Kingly!".format(
             user_member.first_name))
 
     log_message = (
@@ -145,16 +145,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this A Rank Hunter to B Rank Hunter"
+        rt += "Requested HA to demote this Kingly to Saintly"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a B Rank Hunter.")
+        message.reply_text("This user is already a Saintly.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this D Rank Hunter to B Rank Hunter"
+        rt += "Requested HA to promote this Intermediate to Saintly"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -165,7 +165,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a B Rank Hunter!")
+        rt + f"\n{user_member.first_name} was added as a Saintly!")
 
     log_message = (
         f"#SUPPORT\n"
@@ -200,17 +200,17 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a A Rank Hunter, Demoting to D Rank Hunter."
+        rt += "This member is a Kingly. Demoting to Intermediate. "
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a B Rank Hunter, Demoting to D Rank Hunter."
+        rt += "This user is already a Saintly Demoting to Intermediate. "
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a D Rank Hunter.")
+        message.reply_text("This user is already a Intermediate. ")
         return ""
 
     data['whitelists'].append(user_id)
@@ -221,7 +221,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a D Rank Hunter!")
+        f"\nSuccessfully promoted {user_member.first_name} to a Intermediate!")
 
     log_message = (
         f"#WHITELIST\n"
@@ -256,17 +256,17 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a A Rank Hunter, Demoting to C Rank Hunter."
+        rt += "This member is a Kingly. Demoting to Advanced. "
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a B Rank Hunter, Demoting to C Rank Hunter."
+        rt += "This user is already a Saintly. Demoting to Advanced."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a D Rank Hunter, Demoting to C Rank Hunter."
+        rt += "This user is already a Intermediate, Demoting to Advaned."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -471,7 +471,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 @run_async
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known D Rank Hunters 🐺:</b>\n"
+    reply = "<b>Known Intermediate 🐺:</b>\n"
     bot = context.bot
     for each_user in WOLVES:
         user_id = int(each_user)
@@ -487,7 +487,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 @run_async
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known C Rank Hunters 🐯:</b>\n"
+    reply = "<b>Known Advanced 🐯:</b>\n"
     bot = context.bot
     for each_user in TIGERS:
         user_id = int(each_user)
@@ -503,7 +503,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known B Rank Hunters 👹:</b>\n"
+    reply = "<b>Known Saintly 👹:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -519,7 +519,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known A Rank Hunters 🐉:</b>\n"
+    reply = "<b>Known Kingly 🐉:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -535,7 +535,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>S Rank Hunters ⚡️:</b>\n"
+    reply = "<b>Imperial⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -552,15 +552,15 @@ Commands listed here only work for users with special access are mainly used for
 Group admins/group owners do not need these commands. 
 
  ╔ *List all special users:*
- ╠ `/aranks`*:* Lists all A Rank Hunters
- ╠ `/branks`*:* Lists all B Rank Hunters
- ╠ `/cranks`*:* Lists all C Rank Hunters
- ╠ `/dranks`*:* Lists all D Rank Hunters
- ╠ `/sranks`*:* Lists all S Rank Hunters
- ╠ `/addarank`*:* Adds a user to A Rank Hunter
- ╠ `/addbrank`*:* Adds a user to B Rank Hunter
- ╠ `/addcrank`*:* Adds a user to C Rank Hunter
- ╠ `/adddrank`*:* Adds a user to D Rank Hunter
+ ╠ `/Kingly`*:* Lists all A Rank Hunters
+ ╠ `/Saintly`*:* Lists all B Rank Hunters
+ ╠ `/Advanced`*:* Lists all C Rank Hunters
+ ╠ `/Intermediate`*:* Lists all D Rank Hunters
+ ╠ `/Imperial`*:* Lists all S Rank Hunters
+ ╠ `/addkingly`*:* Adds a user to A Rank Hunter
+ ╠ `/addsaint`*:* Adds a user to B Rank Hunter
+ ╠ `/addadvanced`*:* Adds a user to C Rank Hunter
+ ╠ `/addinter`*:* Adds a user to D Rank Hunter
  ╚ `Add dev doesnt exist, devs should know how to add themselves`
 
  ╔ *Ping:*
@@ -637,23 +637,23 @@ Group admins/group owners do not need these commands.
 Visit @{SUPPORT_CHAT} for more information.
 """
 
-SUDO_HANDLER = CommandHandler(("addsudo", "addarank"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "addbrank"), addsupport)
-TIGER_HANDLER = CommandHandler(("addtiger" , "addcrank"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "adddrank"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "removearank"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removebrank"),
+SUDO_HANDLER = CommandHandler(("addsudo", "addkingly"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addsaint"), addsupport)
+TIGER_HANDLER = CommandHandler(("addtiger" , "addadvaned"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addinter"), addwhitelist)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "removekingly"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removesaint"),
                                    removesupport)
-UNTIGER_HANDLER = CommandHandler(("removetiger" , "removecrank"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removedrank"),
+UNTIGER_HANDLER = CommandHandler(("removetiger" , "removeadvanced"), removetiger)
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removeinter"),
                                      removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "dranks"],
+WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "intermediate"],
                                        whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["tigers" , "cranks"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "branks"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "aranks"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "sranks"], devlist)
+TIGERLIST_HANDLER = CommandHandler(["tigers" , "advanced"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "saintly"], supportlist)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "kingly"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "imperial"], devlist)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
